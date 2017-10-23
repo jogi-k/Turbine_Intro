@@ -1,4 +1,4 @@
-#Winking Man
+# Winking Man
 
 This is the relevant source code of the winking man, shown on the Turbine opening on 21-Oct-2017.
 
