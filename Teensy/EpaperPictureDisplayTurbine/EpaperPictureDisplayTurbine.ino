@@ -391,17 +391,58 @@ void setup() {
 
 void loop() {
 
-  delay ( 3000 );
 
   epaper.clearScreen();   // clear the epaper buffer
   epaper.drawBitmap( 0, 0, turbine, 112, 208, WHITE ); // write the bitmaps to the epaper buffer
   epaper.updateScreen();  // update the screen with whatever is in the buffer
-  delay ( 3000 );
+  delay ( 5000 );
+
+  epaper.clearScreen();                                              // clear the screen
+  epaper.setCursor( 0, 1 );                                          // reset the cursor position
+  epaper.println();
+  epaper.println("   turbine");
+  epaper.println();
+  epaper.println();
+  epaper.println("   OFFENE");
+  epaper.println();
+  epaper.println("   WERKSTATT");
+  epaper.println();
+  epaper.println("   UND");
+  epaper.println();
+  epaper.println("   KULTURRAUM");
+  epaper.updateScreen();                                             // update the epaper screen with what is in the buffer
+
+  delay ( 5000 );
  
 
   epaper.clearScreen();   // clear the epaper buffer
   epaper.drawBitmap( 0, 0, myYogi, 112, 208, WHITE ); // write the bitmaps to the epaper buffer
   epaper.updateScreen();  // update the screen with whatever is in the buffer
   delay ( 3000 );
+
+  epaper.clearScreen();                                              // clear the screen
+  epaper.setCursor( 0, 1 );                                          // reset the cursor position
+  epaper.println();
+  epaper.println(" Dies ist eine");
+  epaper.println(" ePaper-Demo" );
+  epaper.println();
+  epaper.println(" Nach Abziehen des");
+  epaper.println(" USB-Steckers");
+  epaper.println(" bleibt das letzte");
+  epaper.println(" Bild stehen");
+  epaper.println();
+  epaper.println(" gerne mal ");
+  epaper.println(" AUSPROBIEREN !");
+  epaper.println();
+  epaper.println(" Bitte danach");
+  epaper.println(" USB wieder ");
+  epaper.println(" anstecken...");
+  epaper.println();
+  epaper.println(" Danke, Jogi ");
+  epaper.updateScreen();                                             // update the epaper screen with what is in the buffer
+
+  delay ( 10000 );
+
+  
 
 }
